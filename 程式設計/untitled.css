@@ -1,0 +1,114 @@
+/*版面設計*/
+
+body{
+	margin: 10px 10px;
+	
+	font-family: Arial "微軟黑正體" ;
+	font-family: 'Amatic SC', cursive;
+}
+
+
+
+
+/* L-size bigger than 980px;M-size 640-979px; S-size smaller than 639px */
+
+#container {
+	width:960px;
+	margin:aute;
+}
+header {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+#headerpost {
+	margin-bottom: 30px;
+	overflow:hidden;
+}
+
+#content {
+	margin-bottom: 30px;
+	overflow:hidden;
+}
+
+footer{
+	margin-bottom: 30px;
+	overflow:hidden;
+}
+
+/*細節設計*/
+/*LOGO*/
+
+#site {
+	float:left;
+}
+
+#site h1 {
+	margin: 70px;
+	color: black;
+}
+
+#site img {
+	vertical-align: bottom;
+	width: 1080px;
+
+}
+
+
+#site nav {
+	margin: 70px;
+	color:black;
+}
+
+
+#headerpost img {
+	vertical-align: bottom;
+	margin: 70px;
+	width: 360px
+}
+
+
+
+#headerpost h2 {
+	margin: 70px;
+	color:black;
+}
+
+
+
+#headerpost p {
+	margin: 70px;
+	color:black;
+}
+
+
+#content h2 {
+	margin:70px;
+	color: black;
+}
+
+
+#content p {
+	margin: 70px;
+	color: black;
+}
+
+
+
+#content img {
+	vertical-align: bottom;
+	margin: 70px;
+	width: 360px
+}
+
+
+
+
+
+
+
+
+
+
+
+
