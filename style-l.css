@@ -1,30 +1,46 @@
-/* ### 版面設計 ###*/
-
 body {
+
     margin: 24px 10px;
-    font-family: Arial, '黑體-繁', sans-serif;
+    font-family: Arial, '微軟正黑體', sans-serif; 
 }
 
 
-#container {
+
+
+#container{
     width: 960px;
     margin: auto;
 }
 
 header {
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
-#headerpost {
+#topnews {
     margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #FFFFFF;
 }
+
+#carousel-item {
+    margin-bottom: 30px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+
+}
+    
 
 #content {
     margin-bottom: 30px;
     overflow: hidden;
 }
 
+
+
+
 .post {
+    margin-top: 25px;
     float: left;
     width: 216px;
     margin-right: 32px;
@@ -41,47 +57,106 @@ header {
 
 
 
+/* ### POST 圖文 ###*/
 
-
-
-/* ### HEADER LOGO ###*/
-
-#site {
-    float: left;
+.post img {
+    width: 216px;
+    height: auto;
+    vertical-align: bottom;
+    border: none;
 }
 
-#site h1 {
+.post h2 {
+    font-size: 16px;
+    margin: 5px 0 0;
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.post p {
+    font-size: 12px;
+    margin: 10px 0;
+    margin-left: 5px;
+    color: #FFFFFF;
+
+}
+
+.post .data {
+    float: left;
+    margin: 0;
+    margin-left: 5px;
+    color: #FFFFFF;
+}
+
+.post .more_s {
+    float: right;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
+    background-color: #FFFFFF;
+    background-image: url(img/more.png);
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 94% 50%;
+    padding: 3px 25px 3px 5px;
     margin: 0;
 }
 
-#site img {
+.post a {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.post a:hover {
+    background-color: #FFFFFF;
+}
+
+
+
+
+footer{
+    margin-bottom: 30px;padding: 5px
+}
+
+
+
+
+
+/***細部設計***/
+/*logo*/
+
+#banner {
+float: left;
+}
+
+#banner h1 {
+    margin: 0;
+}
+
+#banner img {
     vertical-align: bottom;
     width: 332px;
 }
 
 
-
-
-
-
-
-
-
-/* ### HEADER NAV ###*/
-
 nav {
-    float: right;
-    font-size: 15px;
-    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-    padding-top: 30px;
+float: right;
+font-size: 16pt;
+font-family: 'Montserrat', sans-serif;
+padding-top: 30px;
+
 }
 
 nav ul {
     margin: 0;
     padding: 0;
+
 }
 
-nav li {
+
+nav li{
     list-style-type: none;
     float: left;
 }
@@ -96,126 +171,147 @@ nav li a {
     color: #000000;
 }
 
-nav li a:hover {
-    border-bottom-color: #ff1e97;
-}
-
-header {
-    overflow: hidden;
-}
-
-
-
-
-
 
 /* ### HEADERPOST 圖片###*/
 
-#headerpost img {
+#topnews img {
     float: left;
     vertical-align: bottom;
-    width: 620px;
+    width: 500px;
 }
 
-
-
-
-/* ### HEADERPOST LEAD###*/
-
-#headerpost #lead {
+#carousel-item {
     float: left;
-    width: 300px;
-    color: #ffffff;
-    margin-left: 25px;
+    vertical-align: bottom;
+    width: 500px;
 }
 
-#headerpost h2 {
-    margin: 20px 0;
+#iconmenu {
+    float: right;
 }
 
-#headerpost .more {
-    font-size: 18px;
-    font-family: 'Maven Pro', Helvetica, Arial, sans-serif;
-    text-align: right;
+#iconmenu ul {
+    margin: 0;
+    padding: 3px 0 0;
 }
 
-#headerpost .more a {
-    color: #ffffff;
-    background-image: url(img/more.png);
-    background-size: 28px;
-    background-repeat: no-repeat;
-    background-position: right center;
-    display: block;
-    padding: 10px 40px 10px 0;
-    text-decoration: none;
+#iconmenu li {
+    display: inline;
+    list-style-type: none;
 }
 
-#headerpost {
-    background-color: #333333;
-    background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#888888));
-    background: -webkit-linear-gradient(#000000 0%, #888888 100%);
-    background: -moz-linear-gradient(#000000 0%, #888888 100%);
-    background: -o-linear-gradient(#000000 0%, #888888 100%);
-    background: -ms-linear-gradient(#000000 0%, #888888 100%);
-    background: linear-gradient(#000000 0%, #888888 100%);
+#iconmenu img {
+    border: none;
+    width: 28px;
+}
+
+#submenu {
+    clear: both;
+    font-family: 'Maven Pro', Helvetica, Arial, san-serif;
+    font-size: 12px;
     overflow: hidden;
 }
 
+#submenu ul {
+    margin: 3px;
+    padding: 0;
+}
 
+#submenu li {
+    list-style-type: none;
+    float: left;
+}
 
+#submenu li a {
+    display: block;
+    width: auto;
+    border-right: solid 1px #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-right: 6px;
+    margin-right: 3px;
+}
 
-
-
-
-/* ### POST 圖文 ###*/
-
-.post img {
-    width: 216px;
-    height: auto;
-    vertical-align: bottom;
+#submenu li:last-child a {
     border: none;
 }
 
-.post h2 {
-    font-size: 16px;
-    margin: 5px 0 0;
+#submenu li+li+li a {
+    border: none;
 }
 
-.post p {
+small {
     font-size: 12px;
-    margin: 10px 0;
-}
-
-.post .data {
-    float: left;
-    margin: 0;
-}
-
-.post .more_s {
-    float: right;
-    color: #ffffff;
-    font-size: 14px;
-    font-family: 'Macen Pro', Helvetica, Arial, sans-serif;
-    background-color: #666666;
-    background-image: url(img/more.png);
-    background-size: 16px;
-    background-repeat: no-repeat;
-    background-position: 94% 50%;
-    padding: 3px 25px 3px 5px;
-    margin: 0;
-}
-
-.post a {
-    color: #000000;
-    text-decoration: none;
+    font-weight: bold;
     display: block;
-    overflow: hidden;
+    color: #FFFFFF;
+    margin-top: 10px;
 }
 
-.post a:hover {
-    background-color: #cfffb2
+
+#banner{
+    float: left;
 }
 
+#banner h1{
+    margin:0;
+}   
+
+
+
+
+
+
+
+#banner img{
+    vertical-align: bottom;
+    width: 332px
+}
+
+
+
+
+
+
+nav {
+    float: right;
+    font-size: 15px;
+    font-family: 'Fjalla One', sans-serif;
+    padding-top: 30px;
+}
+
+
+
+nav ul{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+
+
+
+nav li{
+    list-style-type: none;
+    float: left;
+
+
+}
+
+
+nav li a {
+    display: block;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-bottom: solid 3px transparent;
+    color: #000000;
+}
 
 
 
